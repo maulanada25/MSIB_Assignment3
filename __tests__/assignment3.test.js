@@ -66,7 +66,7 @@ describe("POST /photos", () => {
             if(err) done(err)
     
             expect(res.body).toHaveProperty("title")
-            // expect(res.body.message).toEqual()
+            expect(res.body.message).toEqual("Token not provided!")
             done()
         })
     })
@@ -116,7 +116,7 @@ describe("POST /photos", () => {
         if(err) done(err)
 
         expect(res.body).toHaveProperty("message")
-        // expect(res.body.message).toEqual()
+        expect(res.body.message).toEqual("Token not provided!")
         done()
         })
     })
@@ -183,7 +183,7 @@ describe("POST /photos", () => {
             if(err) done(err)
     
             expect(res.body).toHaveProperty("message")
-            // expect(res.body.message).toEqual()
+            expect(res.body.message).toEqual("Token not provided!")
             done()
         })
         })
